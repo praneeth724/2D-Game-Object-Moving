@@ -1,0 +1,42 @@
+
+************************************************Physics Using Methods(RigitBody**********************************************)
+First Method
+
+GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxis("Horizontal") * movePlayerSpeed, 0f);
+
+Second Method(Using Rigitbody Public Variable)
+
+float horizontalInput = Input.GetAxis("Horizontal");
+Vector2 movement = new Vector2(horizontalInput, 0f);
+Vector2 velocity = movement * movePlayerSpeed;
+rb.velocity = velocity;
+
+Third Method
+
+GetComponent<Rigidbody2D>().AddForce(Vector2.right * Input.GetAxis("Horizontal") * movePlayerSpeed);
+
+
+
+
+*************************************************trnansform Using*****************************************************
+
+
+
+First Method
+
+transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * movePlayerSpeed * Time.deltaTime);
+
+
+Second Method
+
+Vector2 newPosition = new Vector2(transform.position.x + Input.GetAxis("Horizontal") * movePlayerSpeed * Time.deltaTime,      transform.position.y);
+transform.position = newPosition;
+
+
+
+
+
+
+
+
+

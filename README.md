@@ -18,8 +18,4 @@ Description:
 
 🕹️ Start creating your own 2D platformer game today! Feel free to fork the repository, contribute improvements, or use it as a foundation for your game development journey.
 
-🔗 GitHub Repository: [Your Repository Link Here]
-
-📺 Watch the tutorial on YouTube: [Your YouTube Video Link Here]
-
 Happy coding and game development! 🎮✨
